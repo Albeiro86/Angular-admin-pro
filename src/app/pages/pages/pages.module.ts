@@ -6,6 +6,9 @@ import { Grafica1Component } from '../grafica1/grafica1.component';
 import { PagesComponent } from './pages.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AppRoutingModule } from '../../app-routing/app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { ComponentsModule } from 'src/app/components/components.module';
+
 
 
 
@@ -14,7 +17,8 @@ import { AppRoutingModule } from '../../app-routing/app-routing.module';
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent
+    PagesComponent,
+
   ],
   exports:[
     DashboardComponent,
@@ -24,8 +28,12 @@ import { AppRoutingModule } from '../../app-routing/app-routing.module';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ComponentsModule,
+    
+    
   ]
 })
 export class PagesModule { }
